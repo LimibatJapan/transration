@@ -620,8 +620,19 @@ header {
   gap: 10px; /* ロゴ間の隙間 */
 }
 
-.logo-left, .logo-right {
-  max-width: 90px;  /* ロゴの最大幅をさらに小さく調整 */
+.logo-left {
+  max-width: 90px;  /* ロゴ01の最大幅 */
+  height: auto;
+}
+
+.logo-right {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.logo-right img {
+  max-width: 90px;  /* ロゴ02〜04の最大幅 */
   height: auto;
 }
 
@@ -649,7 +660,6 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;  /* ロゴとボタンが収まるように改行可能に */
   }
 
   .logo-group {
@@ -657,17 +667,27 @@ header {
     gap: 10px;
     justify-content: flex-start;
     width: 100%;
-    margin-bottom: 10px;
   }
 
-  .logo-left, .logo-right {
-    max-width: 80px; /* ロゴの最大幅をさらに小さく調整 */
+  .logo-left {
+    max-width: 90px;
     height: auto;
+  }
+
+  .logo-right {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    width: auto;
+  }
+
+  .logo-right img {
+    max-width: 80px;  /* スマホ表示でロゴ02〜04の最大幅を少し小さく調整 */
   }
 
   .cta-wrapper {
     display: flex;
-    justify-content: center; /* ボタンも中央寄せに調整 */
+    justify-content: center;
     align-items: center;
   }
 
