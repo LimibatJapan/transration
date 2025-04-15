@@ -600,26 +600,78 @@ header {
 /* スマホ対応 */
 @media (max-width: 768px) {
 
-  /* ヘッダー */
+/* ヘッダー */
+header {
+  background: white;
+  border-bottom: 1px solid #ddd;
+  padding: 35px 20px;
+  position: relative;
+}
+
+.header-placeholder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo-group {
+  display: flex;
+  gap: 10px; /* ロゴ間の隙間 */
+}
+
+.logo-left, .logo-right {
+  max-width: 120px;  /* ロゴの最大幅 */
+  height: auto;
+}
+
+.cta-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.apply-button {
+  background-color: #5e4b8b;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+/* ヘッダーのロゴを横並びにしてボタンと一緒に収める */
+@media (max-width: 768px) {
   .header-placeholder {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  /* ロゴの配置調整 */
   .logo-group {
-    position: relative;
-    right: 0;
+    display: flex;
     gap: 10px;
   }
 
-  .logo-left {
-    max-width: 130px; /* ロゴのサイズ調整 */
+  .logo-left, .logo-right {
+    max-width: 100px; /* ロゴの最大幅 */
+    height: auto;
   }
 
-  .logo-right {
-    max-width: 150px; /* ロゴのサイズ調整 */
+  .cta-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
   }
+
+  .apply-button {
+    font-size: 1rem;
+  }
+}
+
 
   /* キャッチコピーセクション */
   .catch-area {
