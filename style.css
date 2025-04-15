@@ -618,21 +618,12 @@ header {
 .logo-group {
   display: flex;
   gap: 10px; /* ロゴ間の隙間 */
+  justify-content: flex-start;
+  width: auto;
 }
 
-.logo-left {
-  max-width: 90px;  /* ロゴ01の最大幅 */
-  height: auto;
-}
-
-.logo-right {
-  display: flex;
-  gap: 10px;
-  justify-content: flex-end;
-}
-
-.logo-right img {
-  max-width: 90px;  /* ロゴ02〜04の最大幅 */
+.logo-left, .logo-right {
+  max-width: 100px;  /* ロゴ01〜04を同じサイズに統一 */
   height: auto;
 }
 
@@ -654,7 +645,7 @@ header {
   transition: background-color 0.3s;
 }
 
-/* ヘッダーのロゴを横並びにしてボタンと一緒に収める */
+/* スマホ対応 */
 @media (max-width: 768px) {
   .header-placeholder {
     flex-direction: row;
@@ -666,23 +657,12 @@ header {
     display: flex;
     gap: 10px;
     justify-content: flex-start;
-    width: 100%;
-  }
-
-  .logo-left {
-    max-width: 90px;
-    height: auto;
-  }
-
-  .logo-right {
-    display: flex;
-    gap: 10px;
-    justify-content: flex-end;
     width: auto;
   }
 
-  .logo-right img {
-    max-width: 80px;  /* スマホ表示でロゴ02〜04の最大幅を少し小さく調整 */
+  .logo-left, .logo-right {
+    max-width: 90px; /* ロゴ01〜04の最大幅を少し小さく調整 */
+    height: auto;
   }
 
   .cta-wrapper {
@@ -695,7 +675,6 @@ header {
     font-size: 0.9rem; /* ボタンの文字サイズをさらに調整 */
   }
 }
-
 
 
   /* キャッチコピーセクション */
