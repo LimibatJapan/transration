@@ -802,3 +802,50 @@ header {
     padding: 8px 0;
   }
 }
+
+/* ヘッダーのスタイル */
+header {
+  background: white;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.header-placeholder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo-left, .logo-right {
+  max-width: 30%; /* 画面の縮小に合わせて横幅を調整 */
+  height: auto;
+}
+
+/* 画面幅が768px以下のとき */
+@media (max-width: 768px) {
+  .header-placeholder {
+    flex-direction: row; /* 画像が横並びのままで調整 */
+    justify-content: space-between;
+  }
+
+  .logo-left, .logo-right {
+    max-width: 40%; /* 画面が狭くなるに合わせてロゴのサイズを調整 */
+  }
+
+  .cta-wrapper {
+    text-align: center; /* ボタン中央揃え */
+  }
+}
+
+/* 画面幅が480px以下のとき */
+@media (max-width: 480px) {
+  .logo-left, .logo-right {
+    max-width: 45%; /* スマホではロゴを少し小さくして調整 */
+  }
+
+  .cta-wrapper {
+    text-align: center;
+  }
+}
