@@ -1,0 +1,719 @@
+/* ベース設定 */
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f0f0; /* ← グレー感を強めた色 */
+}
+
+/* ヘッダー */
+header {
+  background: white;
+  border-bottom: 1px solid #ddd;
+  padding: 35px 20px;
+  position: relative;
+}
+.header-placeholder {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-left {
+  max-width: 150px; /* ロゴ01の最大幅 */
+  height: auto;
+}
+
+.logo-group {
+  display: flex;
+  gap: 5px; /* ロゴ間の間隔を調整 */
+  position: absolute;
+  right: 220px;
+}
+
+.logo-right {
+  max-width: 200px; /* ロゴ02〜04の最大幅 */
+  height: auto;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+.nav-menu li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+.cta-wrapper {
+  text-align: right;
+  padding: 10px 20px;
+}
+.apply-button {
+  background-color: #5e4b8b;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+.apply-button:hover {
+  background-color: #7c66b0;
+}
+
+/* キャッチコピーセクション */
+.catch-area {
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 20px;
+  background-color: #f0f0f0;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+.text-area {
+  flex: 1;
+}
+.image-area {
+  flex: 1;
+  height: 300px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+.main-catch-box {
+  border: 2px solid #005bac; /* ボックスの枠線（青色） */
+  padding: 20px;              /* 内側の余白 */
+  border-radius: 10px;        /* 角を丸く */
+  background-color: #fff;  /* 背景色（白に近い色） */
+  text-align: center;         /* 中央寄せ */
+  max-width: 600px;           /* 最大幅を指定（必要に応じて調整） */
+  margin: 0 auto;             /* 中央に配置 */
+}
+
+.sub-label {
+  font-size: 2rem;
+  color: #333; /* ラベルの文字色 */
+  margin-bottom: 5px; /* ラベルとキャッチコピーの間隔 */
+}
+
+.main-catch {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #005bac; /* キャッチコピーの文字色 */
+}
+.platform-bubble {
+  display: inline-block;
+  background-color: #fff;
+  border: 2px solid #005bac;
+  border-radius: 20px;
+  padding: 10px 20px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  color: #005bac;
+  font-size: 1rem;
+  margin-bottom: 25px;
+}
+.platform-bubble::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 30px;
+  border: 10px solid transparent;
+  border-top-color: #005bac;
+}
+.platform-bubble::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 31px;
+  border: 9px solid transparent;
+  border-top-color: #fff;
+}
+
+/* 他社との比較セクション */
+.compare-section {
+  background-color: #f0f0f0;
+  padding: 60px 20px;
+  text-align: center;
+}
+.compare-title {
+  margin-bottom: 40px;
+}
+.bubble {
+  display: inline-block;
+  background-color: #005bac;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+.compare-title h2 {
+  font-size: 1.4rem;
+  color: #222;
+  margin: 0;
+}
+.compare-image-placeholder {
+  display: flex;
+  justify-content: center;
+  gap: 80px; /* 画像間の隙間 */
+  margin-top: 20px;
+}
+
+.compare-img {
+  width: 100%;
+  max-width: 230px;  /* 画像の最大幅を指定 */
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+/* 悩み紹介（囲い）セクション */
+.problem-section {
+  background-color: #f0f0f0;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.problem-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+}
+.problem-left {
+  flex: 1;
+  min-width: 300px;
+}
+.problem-image {
+  flex: 1;
+  height: 250px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  min-width: 300px;
+}
+.problem-text p {
+  font-size: 1rem;
+  color: #333;
+  margin: 8px 0;
+  text-align: left;
+}
+.however {
+  font-size: 1rem;
+  color: #777;
+  font-style: italic;
+  margin: 25px 0 10px;
+}
+.section-label {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #005bac;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.problem-box {
+  background-color: #fff;
+  color: #005bac;
+  font-weight: bold;
+  border-radius: 12px;
+  padding: 15px 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  text-align: left;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* 特長紹介（01）セクション */
+.feature-section {
+  background-color: #f0f0f0;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.feature-layout {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.feature-left {
+  flex: 1;
+  min-width: 300px;
+  position: relative;
+}
+.feature-image {
+  flex: 1;
+  min-width: 300px;
+  height: 300px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+.feature-box-wrapper {
+  position: relative;
+  margin-top: 30px;
+}
+.feature-number-circle {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  background-color: #005bac;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+.feature-box {
+  background-color: #fff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  padding: 30px 20px;
+  position: relative;
+  z-index: 1;
+}
+.feature-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 0 16px 0;
+  line-height: 1.4;
+}
+.feature-box p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+/* 装飾用 */
+.small {
+  font-size: 0.85em;
+  margin: 0 2px;
+}
+.blue {
+  color: #005bac;
+  font-weight: bold;
+}
+.underline {
+  text-decoration: underline;
+}
+
+/* 特長紹介（02）セクション */
+.feature-section-02 {
+  background-color: #f0f0f0;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-layout-02 {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.feature-left-02 {
+  flex: 1;
+  min-width: 300px;
+  position: relative;
+}
+
+.feature-image-02 {
+  flex: 1;
+  min-width: 300px;
+  height: 300px;
+  background-color: #f0f0f0; /* 画像差し込み予定スペース */
+  border-radius: 10px;
+}
+
+.feature-box-wrapper-02 {
+  position: relative;
+  margin-top: 30px;
+}
+
+.feature-number-circle-02 {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  background-color: #005bac;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.feature-box-02 {
+  background-color: #fff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  padding: 30px 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.feature-title-02 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 0 16px 0;
+  line-height: 1.4;
+}
+
+.feature-box-02 p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+/* 装飾 */
+.blue {
+  color: #005bac;
+  font-weight: bold;
+}
+
+
+/* 特長紹介（03）セクション */
+.feature-section-03 {
+  background-color: #f0f0f0;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-layout-03 {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.feature-left-03 {
+  flex: 1;
+  min-width: 300px;
+  position: relative;
+}
+
+.feature-image-03 {
+  flex: 1;
+  min-width: 300px;
+  height: 300px;
+  background-color: #f0f0f0; /* 画像差し込み予定 */
+  border-radius: 10px;
+}
+
+.feature-box-wrapper-03 {
+  position: relative;
+  margin-top: 30px;
+}
+
+.feature-number-circle-03 {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  background-color: #005bac;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.feature-box-03 {
+  background-color: #fff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  padding: 30px 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.feature-title-03 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 0 16px 0;
+  line-height: 1.4;
+}
+
+.feature-box-03 p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+/* 青文字と小文字共通 */
+.blue {
+  color: #005bac;
+  font-weight: bold;
+}
+.small {
+  font-size: 0.85em;
+  margin: 0 2px;
+}
+
+
+/* プランセクション全体 */
+.plan-section {
+  background-color: #f0f0f0;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* タブボタン */
+.plan-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.plan-tabs button {
+  padding: 10px 0px;
+  width: 260px;
+  margin: 0 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #fff;
+  border: 2px solid #005bac;
+  border-radius: 30px;
+  color: #005bac;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.plan-tabs button.active,
+.plan-tabs button:hover {
+  background-color: #005bac;
+  color: #fff;
+}
+
+/* プラン内容エリア */
+.plan-content {
+  text-align: center;
+}
+
+/* キャッチコピー */
+.plan-copy {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* 対応言語数 */
+.plan-lang {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #333;
+}
+
+.plan-lang .big {
+  font-size: 1.2rem;
+}
+
+/* カード表示エリア */
+.plan-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* 各カード */
+.plan-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 0px 0;
+  width: 260px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+/* プラン名（ライト／スタンダード） */
+.plan-card h4 {
+  font-size: 1.5rem;
+  background-color: #005bac;
+  color: #fff;
+  padding: 12px 0; /* 内側の余白は残す */
+  border-radius: 20px 20px 0 0; /* 上だけ丸くする */
+  margin: 0; /* 外側の余白は完全になし */
+  width: 100%;
+  line-height: 1.2;
+}
+
+/* 価格 */
+.plan-card .price {
+  font-size: 1.6rem;
+  background-color: #e0f0ff;
+  color: #000;
+  font-weight: bold;
+  padding: 10px 0;
+  margin: 0 0 16px 0;
+  margin-bottom:6px;
+  border-radius: 0;
+}
+
+/* カード内の各項目 */
+.plan-card p {
+  font-size: 0.95rem;
+  margin: 5px 0;
+  color: #333;
+  font-weight: normal;
+}
+
+.plan-card p span {
+  font-weight: bold;
+}
+
+/* 初期費用無料セクション */
+.free-section {
+  background-color: #f0f0f0;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.free-box {
+  background-color: #005bac;
+  color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.0);
+  padding: 30px 20px;
+  max-width: 515px;
+  margin: 0 auto;
+}
+
+.free-line {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.small {
+  font-size: 0.85em;
+  margin: 0 4px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+
+
+.catch-image, .problem-img, .feature-img {
+  width: 80%;
+  max-width: 500px;  /* 最大幅を指定 */
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;   /* 中央に配置 */
+  margin-top: -30px; /* 少し上に移動（値を調整） */
+}
+
+
+/* 画面幅が768px以下のときに適用 */
+@media (max-width: 768px) {
+  /* ヘッダーのレイアウト調整 */
+  header {
+    padding: 10px 15px;
+  }
+  .header-placeholder {
+    flex-direction: column; /* 画像を縦並びにする */
+    align-items: center; /* 中央揃え */
+  }
+  .logo-left, .logo-right {
+    max-width: 120px; /* ロゴ画像のサイズを縮小 */
+  }
+
+  /* ナビゲーションメニュー（必要に応じて） */
+  .nav-menu {
+    flex-direction: column; /* ナビゲーションを縦並びにする */
+    gap: 10px;
+  }
+  .nav-menu li a {
+    font-size: 1rem;
+  }
+
+  /* ボタンの調整 */
+  .cta-wrapper {
+    text-align: center;
+  }
+  .apply-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  /* 画像のリサイズ */
+  .logo-left, .logo-right {
+    max-width: 100%;  /* 画像の幅を100%に */
+    height: auto;     /* 高さは自動調整 */
+  }
+}
+
+/* 画面幅が480px以下のときに適用（スマホ横画面対応） */
+@media (max-width: 480px) {
+  /* ヘッダーの余白調整 */
+  header {
+    padding: 10px 10px;
+  }
+  .header-placeholder {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo-left, .logo-right {
+    max-width: 100px; /* さらにロゴサイズを縮小 */
+  }
+
+  /* ボタンの調整 */
+  .apply-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .cta-wrapper {
+    text-align: center;
+  }
+}
