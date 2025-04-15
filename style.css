@@ -39,29 +39,12 @@ header {
   max-width: 200px; /* ロゴ02〜04の最大幅 */
   height: auto;
 }
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: auto;
-}
-.nav-menu {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  margin: 0;
-  padding: 0;
-}
-.nav-menu li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-}
+
 .cta-wrapper {
   text-align: right;
   padding: 10px 20px;
 }
+
 .apply-button {
   background-color: #5e4b8b;
   color: #fff;
@@ -89,64 +72,38 @@ header {
   margin: 0 auto;
   gap: 40px;
 }
+
 .text-area {
   flex: 1;
 }
+
 .image-area {
   flex: 1;
   height: 300px;
   background-color: #f0f0f0;
   border-radius: 10px;
 }
+
 .main-catch-box {
-  border: 2px solid #005bac; /* ボックスの枠線（青色） */
-  padding: 20px;              /* 内側の余白 */
-  border-radius: 10px;        /* 角を丸く */
-  background-color: #fff;  /* 背景色（白に近い色） */
-  text-align: center;         /* 中央寄せ */
-  max-width: 600px;           /* 最大幅を指定（必要に応じて調整） */
-  margin: 0 auto;             /* 中央に配置 */
+  border: 2px solid #005bac;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .sub-label {
   font-size: 2rem;
-  color: #333; /* ラベルの文字色 */
-  margin-bottom: 5px; /* ラベルとキャッチコピーの間隔 */
+  color: #333;
+  margin-bottom: 5px;
 }
 
 .main-catch {
   font-size: 2.8rem;
   font-weight: bold;
-  color: #005bac; /* キャッチコピーの文字色 */
-}
-.platform-bubble {
-  display: inline-block;
-  background-color: #fff;
-  border: 2px solid #005bac;
-  border-radius: 20px;
-  padding: 10px 20px;
-  position: relative;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  font-weight: bold;
   color: #005bac;
-  font-size: 1rem;
-  margin-bottom: 25px;
-}
-.platform-bubble::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 30px;
-  border: 10px solid transparent;
-  border-top-color: #005bac;
-}
-.platform-bubble::before {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 31px;
-  border: 9px solid transparent;
-  border-top-color: #fff;
 }
 
 /* 他社との比較セクション */
@@ -155,9 +112,11 @@ header {
   padding: 60px 20px;
   text-align: center;
 }
+
 .compare-title {
   margin-bottom: 40px;
 }
+
 .bubble {
   display: inline-block;
   background-color: #005bac;
@@ -168,11 +127,13 @@ header {
   font-size: 0.95rem;
   margin-bottom: 10px;
 }
+
 .compare-title h2 {
   font-size: 1.4rem;
   color: #222;
   margin: 0;
 }
+
 .compare-image-placeholder {
   display: flex;
   justify-content: center;
@@ -196,16 +157,19 @@ header {
   max-width: 1200px;
   margin: 0 auto;
 }
+
 .problem-layout {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
   align-items: flex-start;
 }
+
 .problem-left {
   flex: 1;
   min-width: 300px;
 }
+
 .problem-image {
   flex: 1;
   height: 250px;
@@ -213,18 +177,21 @@ header {
   border-radius: 10px;
   min-width: 300px;
 }
+
 .problem-text p {
   font-size: 1rem;
   color: #333;
   margin: 8px 0;
   text-align: left;
 }
+
 .however {
   font-size: 1rem;
   color: #777;
   font-style: italic;
   margin: 25px 0 10px;
 }
+
 .section-label {
   font-size: 1.1rem;
   font-weight: bold;
@@ -232,6 +199,7 @@ header {
   margin-bottom: 20px;
   text-align: left;
 }
+
 .problem-box {
   background-color: #fff;
   color: #005bac;
@@ -251,17 +219,20 @@ header {
   max-width: 1200px;
   margin: 0 auto;
 }
+
 .feature-layout {
   display: flex;
   gap: 40px;
   flex-wrap: wrap;
   align-items: flex-start;
 }
+
 .feature-left {
   flex: 1;
   min-width: 300px;
   position: relative;
 }
+
 .feature-image {
   flex: 1;
   min-width: 300px;
@@ -269,10 +240,12 @@ header {
   background-color: #f0f0f0;
   border-radius: 10px;
 }
+
 .feature-box-wrapper {
   position: relative;
   margin-top: 30px;
 }
+
 .feature-number-circle {
   position: absolute;
   top: -10px;
@@ -290,6 +263,7 @@ header {
   z-index: 10;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
+
 .feature-box {
   background-color: #fff;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
@@ -298,30 +272,19 @@ header {
   position: relative;
   z-index: 1;
 }
+
 .feature-title {
   font-size: 1.5rem;
   font-weight: bold;
   margin: 0 0 16px 0;
   line-height: 1.4;
 }
+
 .feature-box p {
   font-size: 1rem;
   color: #333;
   line-height: 1.6;
   margin: 10px 0;
-}
-
-/* 装飾用 */
-.small {
-  font-size: 0.85em;
-  margin: 0 2px;
-}
-.blue {
-  color: #005bac;
-  font-weight: bold;
-}
-.underline {
-  text-decoration: underline;
 }
 
 /* 特長紹介（02）セクション */
@@ -349,7 +312,7 @@ header {
   flex: 1;
   min-width: 300px;
   height: 300px;
-  background-color: #f0f0f0; /* 画像差し込み予定スペース */
+  background-color: #f0f0f0;
   border-radius: 10px;
 }
 
@@ -399,13 +362,6 @@ header {
   margin: 10px 0;
 }
 
-/* 装飾 */
-.blue {
-  color: #005bac;
-  font-weight: bold;
-}
-
-
 /* 特長紹介（03）セクション */
 .feature-section-03 {
   background-color: #f0f0f0;
@@ -431,7 +387,7 @@ header {
   flex: 1;
   min-width: 300px;
   height: 300px;
-  background-color: #f0f0f0; /* 画像差し込み予定 */
+  background-color: #f0f0f0;
   border-radius: 10px;
 }
 
@@ -480,17 +436,6 @@ header {
   line-height: 1.6;
   margin: 10px 0;
 }
-
-/* 青文字と小文字共通 */
-.blue {
-  color: #005bac;
-  font-weight: bold;
-}
-.small {
-  font-size: 0.85em;
-  margin: 0 2px;
-}
-
 
 /* プランセクション全体 */
 .plan-section {
@@ -638,8 +583,7 @@ header {
   text-decoration: underline;
 }
 
-
-
+/* 画像サイズ */
 .catch-image, .problem-img, .feature-img {
   width: 80%;
   max-width: 500px;  /* 最大幅を指定 */
@@ -648,6 +592,99 @@ header {
   object-fit: cover;
   border-radius: 10px;
   display: block;
-  margin: 0 auto;   /* 中央に配置 */
-  margin-top: -30px; /* 少し上に移動（値を調整） */
+  margin: 0 auto;
+  margin-top: 20px; /* 少し上に移動（値を調整） */
+}
+
+
+/* スマホ対応 */
+@media (max-width: 768px) {
+
+  /* ヘッダー */
+  .header-placeholder {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* ロゴの配置調整 */
+  .logo-group {
+    position: relative;
+    right: 0;
+    gap: 10px;
+  }
+
+  .logo-left {
+    max-width: 130px; /* ロゴのサイズ調整 */
+  }
+
+  .logo-right {
+    max-width: 150px; /* ロゴのサイズ調整 */
+  }
+
+  /* キャッチコピーセクション */
+  .catch-area {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .catch-area .image-area {
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .catch-area .text-area {
+    text-align: center;
+  }
+
+  /* 他社との比較セクション */
+  .compare-image-placeholder {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .compare-img {
+    max-width: 90%; /* 画像を画面幅に合わせて調整 */
+  }
+
+  /* 悩み紹介セクション */
+  .problem-layout {
+    flex-direction: column;
+  }
+
+  .problem-left, .problem-image {
+    min-width: 100%;
+  }
+
+  /* 特長紹介セクション */
+  .feature-layout,
+  .feature-layout-02,
+  .feature-layout-03 {
+    flex-direction: column;
+  }
+
+  .feature-left, .feature-image {
+    min-width: 100%;
+  }
+
+  .feature-box-wrapper {
+    margin-top: 20px;
+  }
+
+  .feature-number-circle {
+    top: 10px;
+    left: 10px;
+  }
+
+  /* プランセクション */
+  .plan-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* 初期費用無料セクション */
+  .free-box {
+    padding: 20px;
+    max-width: 100%;
+  }
 }
