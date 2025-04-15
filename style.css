@@ -621,7 +621,7 @@ header {
 }
 
 .logo-left, .logo-right {
-  max-width: 120px;  /* ロゴの最大幅 */
+  max-width: 90px;  /* ロゴの最大幅をさらに小さく調整 */
   height: auto;
 }
 
@@ -634,11 +634,11 @@ header {
 .apply-button {
   background-color: #5e4b8b;
   color: #fff;
-  padding: 12px 24px;
+  padding: 8px 16px;  /* ボタンを少し小さめに調整 */
   border-radius: 30px;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1rem; /* ボタンの文字サイズを調整 */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s;
 }
@@ -649,28 +649,33 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;  /* ロゴとボタンが収まるように改行可能に */
   }
 
   .logo-group {
     display: flex;
     gap: 10px;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 10px;
   }
 
   .logo-left, .logo-right {
-    max-width: 100px; /* ロゴの最大幅 */
+    max-width: 80px; /* ロゴの最大幅をさらに小さく調整 */
     height: auto;
   }
 
   .cta-wrapper {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center; /* ボタンも中央寄せに調整 */
     align-items: center;
   }
 
   .apply-button {
-    font-size: 1rem;
+    font-size: 0.9rem; /* ボタンの文字サイズをさらに調整 */
   }
 }
+
 
 
   /* キャッチコピーセクション */
