@@ -802,13 +802,13 @@ header {
 
   /* テキスト部分 */
   .feature-left-01 {
-    order: 2; /* テキストを下に配置 */
+    order: 2 !important; /* テキストを下に配置 */
     text-align: center;
   }
 
   /* 画像部分 */
   .feature-image-01 {
-    order: 1; /* 画像を上に配置 */
+    order: 1 !important; /* 画像を上に配置 */
     width: 100%; /* 画像の幅を100%に */
     height: auto; /* 高さは自動調整 */
     object-fit: cover; /* 画像が親要素にフィットするように調整 */
