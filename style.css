@@ -653,6 +653,7 @@ header {
     z-index: 1; /* テキストが画像の上に重なるようにする */
     text-align: center;
     position: relative;
+    margin-top: 50px;
   }
 
   .image-area {
