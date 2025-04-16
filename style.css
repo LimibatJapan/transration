@@ -610,7 +610,7 @@ header {
 }
 
 .logo-group {
-  max-width: 100px; /* ロゴサイズを小さく */
+  max-width: 60px; /* ロゴサイズを小さく */
   display: flex; /* ロゴが横並びになるように */
   gap: 0px; /* ロゴの間隔を調整 */
   position: relative;
@@ -624,7 +624,7 @@ header {
 }
 
 .apply-button {
-  font-size: 0.9rem; /* ボタンのフォントサイズを小さく */
+  font-size: 0.7rem; /* ボタンのフォントサイズを小さく */
   padding: 8px 16px;
 }
 
