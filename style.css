@@ -798,6 +798,7 @@ header {
     flex-direction: column; /* 縦並びに変更 */
     gap: 20px;
     padding: 10px 10px;
+    margin-top: 20px;
   }
 
   /* テキスト部分 */
