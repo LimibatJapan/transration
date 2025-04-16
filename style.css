@@ -810,7 +810,6 @@ header {
     width: 100%; /* 画像の幅を100%に */
     height: auto; /* 高さは自動調整 */
     object-fit: cover; /* 画像が親要素にフィットするように調整 */
-    margin-top:30px;
   }
 
   .feature-box-wrapper {
