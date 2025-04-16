@@ -716,12 +716,14 @@ header {
 /* 横向き（画面を横にした場合）の設定 */
 @media (orientation: landscape) {
   .compare-image-placeholder {
-    flex-direction: row; /* 横並びに変更 */
+    flex-direction: row; /* カードを横並びに変更 */
   }
-　.compare-img {
-    max-width: 300px; /* カードが横並びになった時の最大幅を調整 */
-    width: 25%; /* 画面サイズに応じて幅を調整 */
-    height: auto; /* 高さは自動で調整 */
+
+  .compare-img {
+    width: 70%; /* 横向き時に画像の幅を70%に調整 */
+    max-width: 300px; /* 最大幅を設定して画像の広がりを制限 */
+    height: auto; /* 高さを自動調整して縦横比を維持 */
+    object-fit: cover; /* 画像が親要素を覆うように調整 */
   }
 }
 
