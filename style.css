@@ -601,7 +601,7 @@ header {
 /* ヘッダー部分 */
 header {
   flex-direction: row; /* 横並びを維持 */
-  padding: 20px;
+  padding: 40px;
   justify-content: space-between; /* ロゴとボタンが横並び */
 }
 
@@ -610,6 +610,7 @@ header {
 }
 
 .logo-group {
+  max-width: 100px; /* ロゴサイズを小さく */
   display: flex; /* ロゴが横並びになるように */
   gap: 0px; /* ロゴの間隔を調整 */
   position: relative;
