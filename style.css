@@ -703,3 +703,9 @@ header {
     margin: 0 auto;
   }
 }
+
+@media (max-width: 768px) {
+  .logo-group {
+    display: none; /* スマホ画面でロゴグループを非表示 */
+  }
+}
