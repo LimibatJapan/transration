@@ -618,7 +618,7 @@ header {
 
 .logo-right {
   max-width: 100px; /* ロゴ02〜04の最大幅を調整 */
-  right: 50px; 
+  right: 1000px; 
 }
 
 /* 申込ボタンのラッパー（cta-wrapper） */
