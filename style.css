@@ -666,7 +666,6 @@ header {
     background-image: url('images/catch.png'); /* 画像を背景に設定 */
     background-size: cover;
     background-position: center;
-    height: 66%; /* 画像の上3分の2は非表示にし、下3分の1にテキストが重なる */
   }
 
   /* キャッチコピーの画像 */
