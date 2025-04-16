@@ -865,6 +865,7 @@ header {
   .feature-left-02 {  /* 02用のテキスト部分も追加 */
     order: 2; /* テキストを下に配置 */
     text-align: center;
+    margin-top: -10px;
   }
 
   /* 画像部分 */
@@ -929,6 +930,7 @@ header {
   .feature-left-03 {  /* 03用のテキスト部分も追加 */
     order: 2; /* テキストを下に配置 */
     text-align: center;
+    margin-top: -10px;
   }
 
   /* 画像部分 */
