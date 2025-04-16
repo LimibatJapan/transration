@@ -718,10 +718,9 @@ header {
   .compare-image-placeholder {
     flex-direction: row; /* 横並びに変更 */
   }
-
-  .compare-img {
+　.compare-img {
     max-width: 300px; /* カードが横並びになった時の最大幅を調整 */
-    width: 70%; /* 画面サイズに応じて幅を調整 */
+    width: 40%; /* 画面サイズに応じて幅を調整 */
     height: auto; /* 高さは自動で調整 */
   }
 }
