@@ -618,17 +618,18 @@ header {
 
 .logo-right {
   max-width: 100px; /* ロゴ02〜04の最大幅を調整 */
+  right: 50px; 
 }
 
 /* 申込ボタンのラッパー（cta-wrapper） */
 .cta-wrapper {
   position: relative;
-  left: 10px; /* ロゴグループの右側に配置 */
+  left: 20px; /* ロゴグループの右側に配置 */
   text-align: left;  /* ボタンが左に寄るように調整 */
 }
 
 .apply-button {
-  font-size: 0.3rem; /* ボタンのフォントサイズを小さく */
+  font-size: 0.6rem; /* ボタンのフォントサイズを小さく */
   padding: 4px 8px;
 }
 
