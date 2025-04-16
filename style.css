@@ -614,11 +614,11 @@ header {
   gap: 0px; /* ロゴの間隔を調整 */
   position: relative;
   max-width: 60px; /* ロゴサイズを小さく */
+  right: 100px; 
 }
 
 .logo-right {
   max-width: 100px; /* ロゴ02〜04の最大幅を調整 */
-  right: 1000px; 
 }
 
 /* 申込ボタンのラッパー（cta-wrapper） */
