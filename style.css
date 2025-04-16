@@ -792,7 +792,7 @@ header {
 
 /* スマホ用メディアクエリ（画面幅が768px以下の場合） */
 @media (max-width: 768px) {
-  /* 特徴セクション */
+  /* 特長紹介セクション（01, 02, 03）共通のスタイル */
   .feature-section {
     display: flex;
     flex-direction: column; /* 縦並びに変更 */
@@ -800,11 +800,13 @@ header {
     padding: 40px 20px;
   }
 
+  /* テキスト部分 */
   .feature-left {
     order: 2; /* テキストを下に配置 */
     text-align: center;
   }
 
+  /* 画像部分 */
   .feature-image {
     order: 1; /* 画像を上に配置 */
     width: 100%; /* 画像の幅を100%に */
@@ -812,6 +814,7 @@ header {
     object-fit: cover; /* 画像が親要素にフィットするように調整 */
   }
 
+  /* 各セクション内のボックス */
   .feature-box-wrapper {
     position: relative;
     margin-top: 20px;
@@ -844,6 +847,7 @@ header {
     z-index: 1;
   }
 }
+
 
   /* プランセクション */
   .plan-tabs {
