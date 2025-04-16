@@ -597,9 +597,6 @@ header {
 }
 
 
-/* スマホ対応 */
-@media (max-width: 768px) {
-
 /* ヘッダー */
 header {
   background: white;
@@ -619,11 +616,10 @@ header {
   display: flex;
   gap: 10px; /* ロゴ間の隙間 */
   justify-content: flex-start;
-  width: auto;
 }
 
 .logo-left, .logo-right {
-  max-width: 100px;  /* ロゴ01〜04を同じサイズに統一 */
+  max-width: 120px;  /* ロゴの最大幅 */
   height: auto;
 }
 
@@ -636,111 +632,46 @@ header {
 .apply-button {
   background-color: #5e4b8b;
   color: #fff;
-  padding: 8px 16px;  /* ボタンを少し小さめに調整 */
+  padding: 12px 24px;
   border-radius: 30px;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1rem; /* ボタンの文字サイズを調整 */
+  font-size: 1.1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s;
+}
+
+.apply-button:hover {
+  background-color: #7c66b0;
 }
 
 /* スマホ対応 */
 @media (max-width: 768px) {
   .header-placeholder {
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;  /* ヘッダーのロゴとボタンを縦に並べる */
     align-items: center;
   }
 
   .logo-group {
     display: flex;
     gap: 10px;
-    justify-content: flex-start;
-    width: auto;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
   }
 
   .logo-left, .logo-right {
-    max-width: 90px; /* ロゴ01〜04の最大幅を少し小さく調整 */
-    height: auto;
+    max-width: 90px;  /* ロゴのサイズを小さくして画面に収まるように調整 */
   }
 
   .cta-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: center;  /* 申し込みボタンを中央寄せ */
     align-items: center;
   }
 
   .apply-button {
-    font-size: 0.9rem; /* ボタンの文字サイズをさらに調整 */
-  }
-}
-
-
-  /* キャッチコピーセクション */
-  .catch-area {
-    flex-direction: column;
-    padding: 30px 20px;
-  }
-
-  .catch-area .image-area {
-    height: auto;
-    margin-top: 20px;
-  }
-
-  .catch-area .text-area {
-    text-align: center;
-  }
-
-  /* 他社との比較セクション */
-  .compare-image-placeholder {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .compare-img {
-    max-width: 90%; /* 画像を画面幅に合わせて調整 */
-  }
-
-  /* 悩み紹介セクション */
-  .problem-layout {
-    flex-direction: column;
-  }
-
-  .problem-left, .problem-image {
-    min-width: 100%;
-  }
-
-  /* 特長紹介セクション */
-  .feature-layout,
-  .feature-layout-02,
-  .feature-layout-03 {
-    flex-direction: column;
-  }
-
-  .feature-left, .feature-image {
-    min-width: 100%;
-  }
-
-  .feature-box-wrapper {
-    margin-top: 20px;
-  }
-
-  .feature-number-circle {
-    top: 10px;
-    left: 10px;
-  }
-
-  /* プランセクション */
-  .plan-cards {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  /* 初期費用無料セクション */
-  .free-box {
-    padding: 20px;
-    max-width: 100%;
+    font-size: 1rem;  /* スマホ画面用にボタンのサイズを調整 */
+    padding: 10px 20px; /* ボタンのパディングを調整 */
   }
 }
