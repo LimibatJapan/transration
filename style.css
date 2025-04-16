@@ -654,3 +654,136 @@ header {
     max-width: 120px; /* ロゴ02〜04のサイズ調整 */
   }
 }
+
+/* ヘッダー部分 */
+header {
+  background: white;
+  border-bottom: 1px solid #ddd;
+  padding: 35px 20px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-placeholder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo-left {
+  max-width: 150px;
+  height: auto;
+}
+
+.logo-group {
+  display: flex;
+  gap: 5px;
+  position: absolute;
+  right: 20px;
+}
+
+.logo-right {
+  max-width: 200px;
+  height: auto;
+}
+
+.cta-wrapper {
+  text-align: right;
+  padding: 10px 20px;
+}
+
+/* スマホ対応用メディアクエリ */
+@media (max-width: 768px) {
+  .header-placeholder {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .logo-group {
+    position: relative;
+    right: 0;
+  }
+  .logo-left {
+    max-width: 120px;
+  }
+  .logo-group img {
+    max-width: 120px;
+  }
+
+  /* 申込ボタンが重ならないように調整 */
+  .cta-wrapper {
+    position: absolute;
+    right: 10px;
+    top: 40px;
+  }
+}
+
+/* キャッチコピーセクション */
+.catch-area {
+  font-size: 1.3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background-color: #f0f0f0;
+  gap: 40px;
+}
+
+.text-area {
+  flex: 1;
+  max-width: 500px; /* スマホ対応 */
+}
+
+.image-area {
+  flex: 1;
+  max-width: 500px; /* スマホ対応 */
+  height: auto;
+}
+
+.catch-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* 他社との比較セクション */
+.compare-section {
+  background-color: #f0f0f0;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.compare-title {
+  margin-bottom: 40px;
+}
+
+.compare-image-placeholder {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 20px;
+}
+
+.compare-img {
+  width: 100%;
+  max-width: 230px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* スマホ対応用メディアクエリ */
+@media (max-width: 768px) {
+  .compare-image-placeholder {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .compare-img {
+    max-width: 90%;
+  }
+}
