@@ -727,6 +727,68 @@ header {
   }
 }
 
+/* スマホ用メディアクエリ（画面幅が768px以下の場合） */
+@media (max-width: 768px) {
+  /* problem sectionのスタイル */
+  .problem-section {
+    padding: 40px 20px; /* 上下の余白を調整 */
+    max-width: 100%; /* 幅を100%にして親要素に合わせる */
+    margin: 0 auto; /* セクションを中央に配置 */
+  }
+
+  .problem-layout {
+    display: flex;
+    flex-direction: column; /* 縦並びに変更 */
+    gap: 20px; /* 要素間の隙間を調整 */
+    align-items: center; /* セクション内の要素を中央揃え */
+  }
+
+  .problem-left, .problem-image {
+    width: 100%; /* 画像とテキストが親要素に合わせて広がる */
+    text-align: center; /* 画像とテキストを中央に配置 */
+  }
+
+  .problem-text p {
+    font-size: 1rem; /* フォントサイズを調整 */
+    color: #333;
+    margin: 8px 0;
+    text-align: center; /* テキストを中央に配置 */
+  }
+
+  .problem-box {
+    background-color: #fff;
+    color: #005bac;
+    font-weight: bold;
+    border-radius: 12px;
+    padding: 15px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+
+  .however {
+    font-size: 1rem;
+    color: #777;
+    font-style: italic;
+    margin: 25px 0 10px;
+  }
+
+  .section-label {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #005bac;
+    margin-bottom: 20px;
+    text-align: center; /* ラベルも中央に配置 */
+  }
+
+  .problem-image img {
+    width: 100%; /* 画像の幅を親要素に合わせて調整 */
+    height: auto; /* 高さを自動で調整 */
+    border-radius: 10px; /* 画像の角を丸める */
+  }
+}
+
   /* 特長紹介セクション */
   .feature-layout {
     flex-direction: column;
