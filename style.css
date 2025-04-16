@@ -796,9 +796,8 @@ header {
   .feature-section {
     display: flex;
     flex-direction: column; /* 縦並びに変更 */
-    gap: 20px;
+    gap: 5px;
     padding: 10px 10px;
-    margin-top: 20px;
   }
 
   /* テキスト部分 */
