@@ -792,99 +792,37 @@ header {
 
 /* スマホ用メディアクエリ（画面幅が768px以下の場合） */
 @media (max-width: 768px) {
-  /* 特長紹介セクション（01, 02, 03）共通のスタイル */
-  .feature-section {
+  /* 特長紹介（01）セクション */
+  .feature-section-01 {
     display: flex;
     flex-direction: column; /* 縦並びに変更 */
-    gap: 5px;
-    padding: 10px 10px;
-  }
-
-  /* テキスト部分 */
-  .feature-left {
-    order: 2; /* テキストを下に配置 */
-    text-align: center;
-    margin-top: -10px;
-  }
-
-  /* 画像部分 */
-  .feature-image {
-    order: 1; /* 画像を上に配置 */
-    width: 100%; /* 画像の幅を100%に */
-    height: auto; /* 高さは自動調整 */
-    object-fit: cover; /* 画像が親要素にフィットするように調整 */
-   margin-bottom: -10px;
-  }
-
-  /* 各セクション内のボックス */
-  .feature-box-wrapper {
-    position: relative;
-    margin-top: 0px;
-  }
-
-  .feature-number-circle {
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    background-color: #005bac;
-    color: #fff;
-    font-weight: bold;
-    font-size: 1rem;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 10;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  }
-
-  .feature-box {
-    background-color: #fff;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-    border-radius: 12px;
-    padding: 30px 20px;
-    position: relative;
-    z-index: 1;
-    margin-top: 0px;
-
-  }
-/* スマホ用メディアクエリ（画面幅が768px以下の場合） */
-@media (max-width: 768px) {
-  /* 特長紹介セクション（01, 02, 03）共通のスタイル */
-  .feature-section {
-    display: flex;
-    flex-direction: column; /* 縦並びに変更 */
-    gap: 5px;
+    gap: 20px;
     padding: 40px 20px;
   }
 
   /* テキスト部分 */
-  .feature-left,
-  .feature-left-03 {  /* 03用のテキスト部分も追加 */
+  .feature-left-01 {
     order: 2; /* テキストを下に配置 */
     text-align: center;
   }
 
   /* 画像部分 */
-  .feature-image,
-  .feature-image-03 {  /* 03用の画像部分も追加 */
+  .feature-image-01 {
     order: 1; /* 画像を上に配置 */
     width: 100%; /* 画像の幅を100%に */
     height: auto; /* 高さは自動調整 */
     object-fit: cover; /* 画像が親要素にフィットするように調整 */
+    margin-bottom: 10px; /* 画像の下に余白を追加 */
+    margin-top: 20px; /* 画像の上に余白を追加 */
   }
 
   /* 各セクション内のボックス */
-  .feature-box-wrapper,
-  .feature-box-wrapper-03 {  /* 03用のボックスも追加 */
+  .feature-box-wrapper-01 {
     position: relative;
-    margin-top: 0px;
+    margin-top: 20px;
   }
 
-  .feature-number-circle,
-  .feature-number-circle-03 {  /* 03用のナンバリング */
+  .feature-number-circle-01 {
     position: absolute;
     top: -10px;
     left: -10px;
@@ -902,8 +840,7 @@ header {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   }
 
-  .feature-box,
-  .feature-box-03 {  /* 03用のボックス */
+  .feature-box-01 {
     background-color: #fff;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
     border-radius: 12px;
