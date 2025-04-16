@@ -819,7 +819,7 @@ header {
   /* 各セクション内のボックス */
   .feature-box-wrapper {
     position: relative;
-    margin-top: 20px;
+    margin-top: 0px;
   }
 
   .feature-number-circle {
@@ -844,9 +844,10 @@ header {
     background-color: #fff;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
     border-radius: 12px;
-    padding: 0px 0px;
+    padding: 30px 20px;
     position: relative;
     z-index: 1;
+    margin-top: 0px;
 
   }
 /* スマホ用メディアクエリ（画面幅が768px以下の場合） */
@@ -855,7 +856,7 @@ header {
   .feature-section {
     display: flex;
     flex-direction: column; /* 縦並びに変更 */
-    gap: 20px;
+    gap: 5px;
     padding: 40px 20px;
   }
 
