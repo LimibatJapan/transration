@@ -847,6 +847,7 @@ header {
     padding: 0px 0px;
     position: relative;
     z-index: 1;
+
   }
 /* スマホ用メディアクエリ（画面幅が768px以下の場合） */
 @media (max-width: 768px) {
@@ -878,7 +879,7 @@ header {
   .feature-box-wrapper,
   .feature-box-wrapper-03 {  /* 03用のボックスも追加 */
     position: relative;
-    margin-top: 20px;
+    margin-top: 0px;
   }
 
   .feature-number-circle,
