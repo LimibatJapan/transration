@@ -721,6 +721,8 @@ header {
 
   .compare-img {
     max-width: 300px; /* カードが横並びになった時の最大幅を調整 */
+    width: 90%; /* 画面サイズに応じて幅を調整 */
+    height: auto; /* 高さは自動で調整 */
   }
 }
 
