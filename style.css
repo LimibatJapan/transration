@@ -598,32 +598,35 @@ header {
 
 /* スマホ用メディアクエリ（画面幅が768px以下の場合） */
 @media (max-width: 768px) {
-  /* ヘッダー部分 */
-  header {
-    flex-direction: row; /* 横並びを維持 */
-    padding: 20px;
-  }
+/* ヘッダー部分 */
+header {
+  flex-direction: row; /* 横並びを維持 */
+  padding: 20px;
+  justify-content: space-between; /* ロゴとボタンが横並び */
+}
 
-  .logo-left {
-    max-width: 100px; /* ロゴサイズを小さく */
-  }
+.logo-left {
+  max-width: 100px; /* ロゴサイズを小さく */
+}
 
-  .logo-group {
-    position: relative;
-    max-width: 100px;
-    right: 0;
-  }
+.logo-group {
+  display: flex; /* ロゴが横並びになるように */
+  gap: 0px; /* ロゴの間隔を調整 */
+  position: relative;
+}
 
-  .cta-wrapper {
-    position: relative;
-    top: 10px;
-    text-align: right;  /* 申込ボタンを右寄せ */
-  }
+/* 申込ボタンのラッパー（cta-wrapper） */
+.cta-wrapper {
+  position: relative;
+  left: 10px; /* ロゴグループの右側に配置 */
+  text-align: left;  /* ボタンが左に寄るように調整 */
+}
 
-  .apply-button {
-    font-size: 0.9rem; /* ボタンのフォントサイズを小さく */
-    padding: 8px 16px;
-  }
+.apply-button {
+  font-size: 0.9rem; /* ボタンのフォントサイズを小さく */
+  padding: 8px 16px;
+}
+
 
   /* キャッチコピーセクション */
   .catch-area {
@@ -646,17 +649,6 @@ header {
     width: 100%;
     height: auto;
     object-fit: cover;
-  }
-
-  /* 画像の下半分に透明度50%（スマホのみ） */
-  .image-area::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 50%;
-    background: rgba(0, 0, 0, 0.0);
   }
 
   /* 他社との比較セクション */
