@@ -683,15 +683,48 @@ header {
   }
 }
 
-  /* 他社との比較セクション */
+/* 他社との比較セクション */
+.compare-section {
+  background-color: #f0f0f0;
+  padding: 60px 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center; /* 中央に配置 */
+}
+
+.compare-title {
+  margin-bottom: 40px;
+}
+
+/* 比較カードを中央に配置し、横並びにする */
+.compare-image-placeholder {
+  display: flex;
+  justify-content: center; /* 中央に配置 */
+  gap: 20px; /* カード間の隙間を調整 */
+  flex-wrap: wrap; /* 画面幅に合わせて横並び・縦並びを切り替える */
+  margin-top: 20px;
+}
+
+/* 比較カード */
+.compare-img {
+  width: 100%; /* 画面サイズに合わせてカードを伸縮させる */
+  max-width: 230px;  /* 最大幅を指定 */
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* 横向き（画面を横にした場合）の設定 */
+@media (orientation: landscape) {
   .compare-image-placeholder {
-    flex-direction: column;
-    gap: 30px;
+    flex-direction: row; /* 横並びに変更 */
   }
 
   .compare-img {
-    max-width: 90%;
+    max-width: 300px; /* カードが横並びになった時の最大幅を調整 */
   }
+}
 
   /* 特長紹介セクション */
   .feature-layout {
