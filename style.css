@@ -688,20 +688,18 @@ header {
   background-color: #f0f0f0;
   padding: 60px 20px;
   text-align: center;
-  display: flex;
-  justify-content: center; /* 中央に配置 */
 }
 
 .compare-title {
   margin-bottom: 40px;
 }
 
-/* 比較カードを中央に配置し、横並びにする */
+/* 比較カード部分 */
 .compare-image-placeholder {
   display: flex;
-  justify-content: center; /* 中央に配置 */
+  justify-content: center; /* カードを中央に配置 */
   gap: 20px; /* カード間の隙間を調整 */
-  flex-wrap: wrap; /* 画面幅に合わせて横並び・縦並びを切り替える */
+  flex-wrap: wrap; /* 画面幅に応じて縦並び・横並びを切り替える */
   margin-top: 20px;
 }
 
