@@ -790,16 +790,60 @@ header {
   }
 }
 
-  /* 特長紹介セクション */
-  .feature-layout {
-    flex-direction: column;
-    gap: 30px;
+/* スマホ用メディアクエリ（画面幅が768px以下の場合） */
+@media (max-width: 768px) {
+  /* 特徴セクション */
+  .feature-section {
+    display: flex;
+    flex-direction: column; /* 縦並びに変更 */
+    gap: 20px;
+    padding: 40px 20px;
   }
 
-  .feature-left, .feature-image {
-    width: 100%;
+  .feature-left {
+    order: 2; /* テキストを下に配置 */
     text-align: center;
   }
+
+  .feature-image {
+    order: 1; /* 画像を上に配置 */
+    width: 100%; /* 画像の幅を100%に */
+    height: auto; /* 高さは自動調整 */
+    object-fit: cover; /* 画像が親要素にフィットするように調整 */
+  }
+
+  .feature-box-wrapper {
+    position: relative;
+    margin-top: 20px;
+  }
+
+  .feature-number-circle {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background-color: #005bac;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .feature-box {
+    background-color: #fff;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    padding: 30px 20px;
+    position: relative;
+    z-index: 1;
+  }
+}
 
   /* プランセクション */
   .plan-tabs {
