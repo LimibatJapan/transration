@@ -624,7 +624,7 @@ header {
 /* 申込ボタンのラッパー（cta-wrapper） */
 .cta-wrapper {
   position: relative;
-  left: 60px; /* ロゴグループの右側に配置 */
+  left: 100px; /* ロゴグループの右側に配置 */
   text-align: left;  /* ボタンが左に寄るように調整 */
 }
 
