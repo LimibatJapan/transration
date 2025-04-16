@@ -784,7 +784,7 @@ header {
 
   .problem-image img {
     width: 100%; /* 画像の幅を親要素に合わせて調整 */
-    height: 4500px; /* 高さを自動で調整 */
+    height: 450px; /* 高さを自動で調整 */
     border-radius: 10px; /* 画像の角を丸める */
   }
 }
