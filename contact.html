@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>申し込みフォーム</title>
+  <link rel="stylesheet" href="style.css"> <!-- CSSをリンク -->
+</head>
+<body>
+  <section class="contact-section">
+    <h1>申し込みフォーム</h1>
+    <form action="submit.php" method="POST">
+      <!-- 氏名 -->
+      <label for="name">氏名*必須</label>
+      <input type="text" id="name" name="name" required placeholder="名前を入力">
+
+      <!-- メールアドレス -->
+      <label for="email">メールアドレス*必須</label>
+      <input type="email" id="email" name="email" required placeholder="メールアドレスを入力">
+
+      <!-- 電話番号（任意） -->
+      <label for="phone">電話番号 (任意)</label>
+      <input type="tel" id="phone" name="phone" placeholder="電話番号を入力">
+
+      <!-- プラン選択 -->
+      <label for="plan">プラン選択:</label>
+<select id="plan" name="plan" onchange="showSubPlans()" required>
+  <option value="" disabled selected>-</option> <!-- 初期状態は選択なし -->
+  <option value="basic">通常プラン</option>
+  <option value="pro">プロプラン</option>
+</select>
+
+
+      <!-- コース選択（動的表示） -->
+      <div id="subPlan" style="display: none;">
+        <label for="subPlanSelect">コース選択:</label>
+        <select id="subPlanSelect" name="subPlan" required>
+          <option value="light">ライト</option>
+          <option value="standard">スタンダード</option>
+        </select>
+      </div>
+
+      <!-- 備考欄（任意） -->
+      <label for="notes">備考:</label>
+      <textarea id="notes" name="notes" placeholder="特別なリクエストがあればご記入ください"></textarea>
+
+      <!-- 利用規約チェック -->
+      <label for="terms">
+        <input type="checkbox" id="terms" name="terms" required>
+        利用規約に同意する
+      </label>
+
+      <!-- 送信ボタン -->
+      <button type="submit">申し込む</button>
+    </form>
+  </section>
+
+  <script>
+    function showSubPlans() {
+      const plan = document.getElementById('plan').value;
+      const subPlanDiv = document.getElementById('subPlan');
+      
+      // プロプランを選んだ場合はサブプランを表示、それ以外は非表示
+      if (plan === 'pro') {
+        subPlanDiv.style.display = 'block'; // プロプラン選択時にサブプランを表示
+      } else {
+        subPlanDiv.style.display = 'block';  // 通常プラン選択時にサブプラン非表示
+      }
+    }
+  </script>
+
+  <style>
+    /* 基本的なフォームスタイル */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .contact-section {
+      width: 80%;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    label {
+      font-size: 1rem;
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+      color: #555;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    textarea {
+      height: 120px;
+      resize: vertical;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #005bac;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #003d73;
+    }
+
+    /* チェックボックスのラベル */
+    label[for="terms"] {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 10px;
+    }
+
+    /* サブプラン選択部分 */
+    #subPlan {
+      display: none;
+      margin-top: 20px;
+    }
+  </style>
+</body>
+</html>
+
