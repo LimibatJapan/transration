@@ -1048,7 +1048,7 @@ header {
   .plan-cards {
     display: flex;
     gap: 10px; /* カード間の隙間を調整 */
-    flex-wrap: row; /* 横並びになるように設定 */
+    flex-direction: row; /* 横並びになるように設定 */
   }
 
   .plan-card {
