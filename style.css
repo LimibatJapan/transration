@@ -1007,6 +1007,32 @@ header {
   }
 }
 
+/* 横向き（画面を横にした場合）の設定 */
+@media (orientation: landscape) {
+  .plan-section {
+    display: flex;
+    flex-direction: row; /* 横並びに変更 */
+    gap: 30px; /* カード間の隙間を調整 */
+    padding: 40px 20px; /* 上下左右の余白を調整 */
+  }
+
+  /* 各プランカード */
+  .plan-card {
+    width: 300px; /* 横並びでカードの幅を指定 */
+    box-sizing: border-box; /* パディングやボーダーを含めたサイズ計算 */
+  }
+
+  /* プランカード内の内容が大きすぎる場合の調整 */
+  .plan-card h4, .plan-card .price, .plan-card p {
+    font-size: 1rem; /* フォントサイズを調整 */
+  }
+
+  .plan-cards {
+    display: flex;
+    gap: 20px; /* カード間のスペース */
+  }
+}
+
 @media (max-width: 768px) {
   .logo-group {
     display: none; /* スマホ画面でロゴグループを非表示 */
