@@ -1012,14 +1012,14 @@ header {
   .plan-section {
     display: flex;
     flex-direction: column; /* プランカードの前にボタンを表示するため縦並びに */
-    gap: 30px; /* カード間の隙間を調整 */
+    gap: 10px; /* カード間の隙間を調整 */
     padding: 40px 20px;
   }
 
   /* プラン選択ボタン */
   .plan-tabs {
     display: block; /* ボタンを縦並びにする */
-    margin-bottom: 20px; /* ボタンの下に余白を追加してカードと間隔をあける */
+    margin-bottom: 10px; /* ボタンの下に余白を追加してカードと間隔をあける */
     text-align: center; /* ボタンを中央揃え */
   }
 
@@ -1047,12 +1047,12 @@ header {
   /* プランカード */
   .plan-cards {
     display: flex;
-    gap: 20px; /* カード間の隙間を調整 */
+    gap: 10px; /* カード間の隙間を調整 */
     flex-wrap: wrap; /* 横並びになるように設定 */
   }
 
   .plan-card {
-    width: 300px; /* 横並びでカードの幅を指定 */
+    width: 500px; /* 横並びでカードの幅を指定 */
     box-sizing: border-box; /* パディングやボーダーを含めたサイズ計算 */
   }
 }
