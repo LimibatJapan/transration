@@ -1011,27 +1011,52 @@ header {
 @media (orientation: landscape) {
   .plan-section {
     display: flex;
-    flex-direction: row; /* 横並びに変更 */
+    flex-direction: column; /* プランカードの前にボタンを表示するため縦並びに */
     gap: 30px; /* カード間の隙間を調整 */
-    padding: 40px 20px; /* 上下左右の余白を調整 */
+    padding: 40px 20px;
   }
 
-  /* 各プランカード */
+  /* プラン選択ボタン */
+  .plan-tabs {
+    display: block; /* ボタンを縦並びにする */
+    margin-bottom: 20px; /* ボタンの下に余白を追加してカードと間隔をあける */
+    text-align: center; /* ボタンを中央揃え */
+  }
+
+  .plan-tabs button {
+    display: inline-block; /* ボタンを横並びにしない */
+    width: auto; /* ボタンの幅を自動調整 */
+    margin: 0 10px; /* ボタン間の隙間を調整 */
+    padding: 10px 0;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #fff;
+    border: 2px solid #005bac;
+    border-radius: 30px;
+    color: #005bac;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .plan-tabs button.active,
+  .plan-tabs button:hover {
+    background-color: #005bac;
+    color: #fff;
+  }
+
+  /* プランカード */
+  .plan-cards {
+    display: flex;
+    gap: 20px; /* カード間の隙間を調整 */
+    flex-wrap: wrap; /* 横並びになるように設定 */
+  }
+
   .plan-card {
     width: 300px; /* 横並びでカードの幅を指定 */
     box-sizing: border-box; /* パディングやボーダーを含めたサイズ計算 */
   }
-
-  /* プランカード内の内容が大きすぎる場合の調整 */
-  .plan-card h4, .plan-card .price, .plan-card p {
-    font-size: 1rem; /* フォントサイズを調整 */
-  }
-
-  .plan-cards {
-    display: flex;
-    gap: 20px; /* カード間のスペース */
-  }
 }
+
 
 @media (max-width: 768px) {
   .logo-group {
