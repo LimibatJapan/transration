@@ -1048,11 +1048,11 @@ header {
   .plan-cards {
     display: flex;
     gap: 10px; /* カード間の隙間を調整 */
-    flex-wrap: wrap; /* 横並びになるように設定 */
+    flex-wrap: row; /* 横並びになるように設定 */
   }
 
   .plan-card {
-    width: 200px; /* 横並びでカードの幅を指定 */
+    width: 250px; /* 横並びでカードの幅を指定 */
     box-sizing: border-box; /* パディングやボーダーを含めたサイズ計算 */
   }
 }
